@@ -30,10 +30,10 @@ export default {
     />
     <div class="centered">
       <div id="app">
-        <ul v-if="jokes !== null" style="margin-top: 165px; padding: 0">
-          <li v-for="joke in jokes" style="display: flex; gap: 20px">
+        <ul v-if="jokes !== null" style="margin-top: 350px; padding: 0">
+          <li v-for="joke in jokes" style="display: flex; gap: 15px">
             <div>
-              <h5>{{ joke.setup }}</h5>
+              <h6>{{ joke.setup }}</h6>
               <p>{{ joke.delivery }}</p>
             </div>
           </li>
@@ -45,6 +45,11 @@ export default {
   </div>
 </template>
 <style scoped>
+#app {
+  border: 2px;
+  border-color: black;
+  border-width: 2px;
+}
 #wrapper-hero img {
   margin: 0 auto;
   height: auto;

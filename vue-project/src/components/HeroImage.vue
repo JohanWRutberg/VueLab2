@@ -6,7 +6,7 @@
       class="img-fluid"
       alt="Bild"
     />
-    <div id="centered">
+    <div class="centered">
       <ul class="cards">
         <li class="cards__item">
           <div class="card">
@@ -76,11 +76,10 @@
   overflow-x: hidden;
 }
 
-#centered {
-  display: flex;
-  justify-content: center;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+div.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 *,
 *::before,
