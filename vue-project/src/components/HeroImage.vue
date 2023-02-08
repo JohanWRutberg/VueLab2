@@ -1,11 +1,11 @@
 <script></script>
 <template>
   <div id="wrapper-hero">
-    <img
+    <!--<img
       src="../assets/img/laura-adai-hnc2QeA5Xos-unsplash.jpg"
       class="img-fluid"
       alt="Bild"
-    />
+    />-->
     <div class="centered">
       <ul class="cards">
         <li class="cards__item">
@@ -76,10 +76,11 @@
   overflow-x: hidden;
 }
 
-div.centered {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.centered {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
 }
 *,
 *::before,

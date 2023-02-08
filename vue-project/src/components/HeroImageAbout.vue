@@ -1,11 +1,11 @@
 <script></script>
 <template>
   <div id="wrapper-hero">
-    <img
+    <!--<img
       src="../assets/img/laura-adai-YooKbrmuj5Y-unsplash.jpg"
       class="img-fluid"
       alt="Bild"
-    />
+    />-->
     <div class="centered">
       <h1>About-page</h1>
     </div>

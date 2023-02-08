@@ -23,11 +23,11 @@ export default {
 </script>
 <template>
   <div id="wrapper-hero">
-    <img
+    <!--<img
       src="../assets/img/victor-larracuente-4vl6TQYUwvI-unsplash.jpg"
       class="img-fluid"
       alt="Bild"
-    />
+    />-->
     <div class="centered">
       <div id="app">
         <ul v-if="jokes !== null" style="margin-top: 350px; padding: 0">

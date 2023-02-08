@@ -1,11 +1,11 @@
 <script></script>
 <template>
   <div id="wrapper-hero">
-    <img
+    <!--<img
       src="../assets/img/laura-adai-mxGR7FogG10-unsplash.jpg"
       class="img-fluid"
       alt="Bild"
-    />
+    />-->
     <div class="centered">
       <form>
         <div class="segment">
@@ -48,6 +48,7 @@
 </template>
 <style scoped>
 #wrapper-hero img {
+  background-color: #ebecf0;
   margin: 0 auto;
   height: auto;
   overflow-x: hidden;
