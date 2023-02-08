@@ -29,10 +29,7 @@ export default {
       alt="Bild"
     />
     <div class="centered">
-      <h1>Get-page</h1>
       <div id="app">
-        <p>Press the button to randomly generate 10 new jokes.</p>
-        <input @click="fetchJokes" type="button" value="Get newJokes" />
         <ul v-if="jokes !== null" style="margin-top: 165px; padding: 0">
           <li v-for="joke in jokes" style="display: flex; gap: 20px">
             <div>
