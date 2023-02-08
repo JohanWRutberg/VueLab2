@@ -1,17 +1,17 @@
 <script></script>
 <template>
-  <div id="app">
-    <ul v-if="jokes !== null" style="margin-top: 35px; padding: 0">
-      <li v-for="joke in jokes" style="display: flex; gap: 20px">
-        <div>
-          <p>How about some programming jokes?</p>
-          <h3>{{ joke.setup }}</h3>
-          <p>{{ joke.delivery }}</p>
-        </div>
-      </li>
-    </ul>
-
-    <p v-else>Laddar...</p>
+  <div class="centered">
+    <div id="app">
+      <ul v-if="jokes !== null" style="margin-top: 350px; padding: 0">
+        <li v-for="joke in jokes" style="display: flex; gap: 20px">
+          <div>
+            <h6>{{ joke.setup }}</h6>
+            <p>{{ joke.delivery }}</p>
+          </div>
+        </li>
+      </ul>
+      <p v-else>Laddar...</p>
+    </div>
   </div>
 </template>
 
@@ -38,4 +38,23 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+#app {
+  border: 2px;
+  border-color: black;
+  border-width: 2px;
+}
+#wrapper-hero img {
+  margin: 0 auto;
+  height: auto;
+  overflow-x: hidden;
+}
+/* Center the text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+</style>

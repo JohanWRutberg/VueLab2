@@ -1,10 +1,10 @@
 <script setup>
-import HeroImageGet from "../components/HeroImageGet.vue";
-//import GetJokes from "../components/GetJokes.vue";
+//import HeroImageGet from "../components/HeroImageGet.vue";
+import GetJokes from "../components/GetJokes.vue";
 </script>
 
 <template>
-  <HeroImageGet />
-  <!--<GetJokes />-->
+  <!--<HeroImageGet />-->
+  <GetJokes />
 </template>
 <script></script>
