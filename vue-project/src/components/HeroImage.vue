@@ -34,9 +34,9 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="../assets/img/falaq-lazuardi-EY7D79nsPiY-unsplash.jpg"
+              src="../assets/img/vincent-van-zalinge-PS8miM4xR1I-unsplash.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="Pic 1"
             />
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
@@ -46,7 +46,11 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img
+              src="../assets/img/brandon-smith-Bs2HgNgsuWw-unsplash.jpg "
+              class="d-block w-100"
+              alt="Pic 2"
+            />
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
@@ -55,7 +59,11 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img
+              src="../assets/img/evgeni-tcherkasski-hoKgCD9kfTE-unsplash.jpg"
+              class="d-block w-100"
+              alt="Pic 3"
+            />
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>

@@ -21,8 +21,8 @@ import { RouterLink, RouterView } from "vue-router";
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <RouterLink class="nav-link" to="/">Home</RouterLink>
-          <RouterLink class="nav-link" to="/get">Get</RouterLink>
-          <RouterLink class="nav-link" to="/about">About</RouterLink>
+          <RouterLink class="nav-link" to="/get">Funny Jokes</RouterLink>
+          <RouterLink class="nav-link" to="/about">About us</RouterLink>
           <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
         </div>
       </div>

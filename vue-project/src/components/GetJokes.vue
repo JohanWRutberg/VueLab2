@@ -4,8 +4,7 @@
     <ul v-if="jokes !== null" style="margin-top: 35px; padding: 0">
       <li v-for="joke in jokes" style="display: flex; gap: 20px">
         <div>
-          <p>Press the button to randomly generate 10 new jokes.</p>
-          <input @click="fetchJokes" type="button" value="Get newJokes" />
+          <p>How about some programming jokes?</p>
           <h3>{{ joke.setup }}</h3>
           <p>{{ joke.delivery }}</p>
         </div>
