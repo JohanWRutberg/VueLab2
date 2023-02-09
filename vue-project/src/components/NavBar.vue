@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from "vue-router";
 </script>
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-grey">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar fixed-top">
     <div class="container-fluid">
       <RouterLink class="navbar-brand" to="/">Logga</RouterLink>
       <button

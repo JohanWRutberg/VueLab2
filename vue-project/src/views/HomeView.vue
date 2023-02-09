@@ -1,8 +1,8 @@
 <script setup>
-import HeroImage from "../components/HeroImage.vue";
+import HomeCards from "../components/HomeCards.vue";
 </script>
 <template>
-  <HeroImage />
+  <HomeCards />
 </template>
 <script></script>
 <style scoped></style>
