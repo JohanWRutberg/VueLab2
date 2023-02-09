@@ -105,8 +105,8 @@
 .centered {
   display: flex;
   justify-content: center;
-  margin-top: 20vh;
-  margin-bottom: 10vh;
+  margin-top: 220px;
+  margin-bottom: 50vh;
 }
 *,
 *::before,
@@ -230,22 +230,22 @@ img {
   }
 }
 .card__image--1 {
-  background-image: url(https://unsplash.it/800/600?image=50);
+  background-image: url(https://unsplash.it/800/600?image=244);
 }
 .card__image--2 {
-  background-image: url(https://unsplash.it/800/600?image=11);
+  background-image: url(https://unsplash.it/800/600?image=281);
 }
 .card__image--3 {
-  background-image: url(https://unsplash.it/800/600?image=39);
+  background-image: url(https://unsplash.it/800/600?image=317);
 }
 .card__image--4 {
-  background-image: url(https://unsplash.it/800/600?image=59);
+  background-image: url(https://unsplash.it/800/600?image=372);
 }
 .card__image--5 {
-  background-image: url(https://unsplash.it/800/600?image=69);
+  background-image: url(https://unsplash.it/800/600?image=436);
 }
 .card__image--6 {
-  background-image: url(https://unsplash.it/800/600?image=79);
+  background-image: url(https://unsplash.it/800/600?image=451);
 }
 .card__title {
   color: #696969;

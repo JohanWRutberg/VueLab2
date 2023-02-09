@@ -12,21 +12,30 @@ export default {
       return this.s.length;
     },
   },
+  computed: {
+    currentLength() {
+      return this.description.length;
+    },
+    isBad() {
+      return this.currentLength > 40;
+    },
+  },
 };
 </script>
 
 <template>
-  <!--<img
-      src="../assets/img/laura-adai-mxGR7FogG10-unsplash.jpg"
-      class="img-fluid"
-      alt="Bild"
-    />-->
   <div class="centered">
     <form>
       <div class="segment">
         <h1>Send us a message!</h1>
       </div>
-
+      <div id="app" v-cloak>
+        Enter a maximum of 50 characters please:
+        <input type="text" v-model="description" maxlength="50" />
+        <span class="count" :class="{ bad: isBad }">
+          {{ currentLength }} characters
+        </span>
+      </div>
       <label>
         <input type="text" v-model="message" placeholder="Name" />
       </label>
@@ -81,6 +90,7 @@ export default {
 .bad {
   color: red;
 }
+
 .centered {
   position: absolute;
   top: 50%;
@@ -114,6 +124,7 @@ form {
   padding: 16px;
   width: 520px;
   margin: 0 auto;
+  margin-top: 200px;
 }
 
 .segment {
