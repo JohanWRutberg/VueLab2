@@ -12,7 +12,7 @@ export default {
 
   methods: {
     async getJokes() {
-      const response = await fetch(
+      const response = await axios(
         "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=racist&type=twopart&amount=10"
       );
       const result = await response.json();

@@ -1,57 +1,86 @@
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      message: "",
+      description: "",
+      s: "",
+    };
+  },
+  computed: {
+    n: function () {
+      return this.s.length;
+    },
+  },
+};
+</script>
+
 <template>
-  <div id="wrapper-hero">
-    <!--<img
+  <!--<img
       src="../assets/img/laura-adai-mxGR7FogG10-unsplash.jpg"
       class="img-fluid"
       alt="Bild"
     />-->
-    <div class="centered">
-      <form>
-        <div class="segment">
-          <h1>Sign up</h1>
-        </div>
+  <div class="centered">
+    <form>
+      <div class="segment">
+        <h1>Send us a message!</h1>
+      </div>
 
-        <label>
-          <input type="text" placeholder="Email Address" />
-        </label>
-        <label>
-          <input type="password" placeholder="Password" />
-        </label>
-        <label>
-          <input type="text" placeholder="Email Address" />
-        </label>
+      <label>
+        <input type="text" v-model="message" placeholder="Name" />
+      </label>
+      <label>
+        <input
+          type="text"
+          v-model="description"
+          minlength="10"
+          placeholder="E-mail"
+        />
+      </label>
+      <label>
+        <input
+          type="text"
+          v-model="s"
+          placeholder="Message (Maximum 60 characters)"
+        />
+        <p>You have reached {{ n }} characters.</p>
+      </label>
+      <p>User: {{ message }}</p>
+      <p>User: {{ description }}</p>
+      <button class="red" type="button">
+        <i class="icon ion-md-lock"></i> Submit
+      </button>
 
-        <button class="red" type="button">
-          <i class="icon ion-md-lock"></i> Log in
+      <div class="segment">
+        <button class="unit" type="button">
+          <i class="icon ion-md-arrow-back"></i>
         </button>
-
-        <div class="segment">
-          <button class="unit" type="button">
-            <i class="icon ion-md-arrow-back"></i>
-          </button>
-          <button class="unit" type="button">
-            <i class="icon ion-md-bookmark"></i>
-          </button>
-          <button class="unit" type="button">
-            <i class="icon ion-md-settings"></i>
-          </button>
-          <button class="unit" type="button">
-            <i class="icon ion-md-search"></i>
-          </button>
-        </div>
-      </form>
-    </div>
+        <button class="unit" type="button">
+          <i class="icon ion-md-bookmark"></i>
+        </button>
+        <button class="unit" type="button">
+          <i class="icon ion-md-settings"></i>
+        </button>
+        <button class="unit" type="button">
+          <i class="icon ion-md-search"></i>
+        </button>
+      </div>
+    </form>
   </div>
 </template>
 <style scoped>
-#wrapper-hero img {
-  background-color: #ebecf0;
-  margin: 0 auto;
-  height: auto;
-  overflow-x: hidden;
+[v-cloak] {
+  display: none;
 }
-/* Center the text */
+
+.count {
+  font-style: italic;
+}
+
+.bad {
+  color: red;
+}
 .centered {
   position: absolute;
   top: 50%;
@@ -83,7 +112,7 @@ p {
 
 form {
   padding: 16px;
-  width: 320px;
+  width: 520px;
   margin: 0 auto;
 }
 
