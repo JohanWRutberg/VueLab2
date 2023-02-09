@@ -3,13 +3,25 @@ export default {
   data() {
     return {
       message: "",
+      email: "",
       description: "",
-      s: "",
+      msg: [],
     };
   },
-  computed: {
-    n: function () {
-      return this.s.length;
+  watch: {
+    email(value) {
+      // binding this to the data value in the email input
+      this.email = value;
+      this.validateEmail(value);
+    },
+  },
+  methods: {
+    validateEmail(value) {
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
+        this.msg["email"] = "";
+      } else {
+        this.msg["email"] = "Enter a valid Email Address";
+      }
     },
   },
   computed: {
@@ -17,7 +29,7 @@ export default {
       return this.description.length;
     },
     isBad() {
-      return this.currentLength > 40;
+      return this.currentLength > 50;
     },
   },
 };
@@ -29,34 +41,36 @@ export default {
       <div class="segment">
         <h1>Send us a message!</h1>
       </div>
+
+      <label>
+        <input type="text" v-model="message" placeholder="Name" />
+      </label>
+      <label for="email">
+        <input
+          type="text"
+          v-model="email"
+          minlength="10"
+          required
+          placeholder="E-mail"
+        />
+        <p v-if="msg.email">{{ msg.email }}</p>
+      </label>
+
       <div id="app" v-cloak>
-        Enter a maximum of 50 characters please:
-        <input type="text" v-model="description" maxlength="50" />
+        <input
+          type="text"
+          v-model="description"
+          maxlength="60"
+          placeholder="Message"
+        />Enter a maximum of 60 characters please:
         <span class="count" :class="{ bad: isBad }">
           {{ currentLength }} characters
         </span>
       </div>
-      <label>
-        <input type="text" v-model="message" placeholder="Name" />
-      </label>
-      <label>
-        <input
-          type="text"
-          v-model="description"
-          minlength="10"
-          placeholder="E-mail"
-        />
-      </label>
-      <label>
-        <input
-          type="text"
-          v-model="s"
-          placeholder="Message (Maximum 60 characters)"
-        />
-        <p>You have reached {{ n }} characters.</p>
-      </label>
-      <p>User: {{ message }}</p>
-      <p>User: {{ description }}</p>
+      <p></p>
+      <p>Name: {{ message }}</p>
+      <p>E-mail: {{ email }}</p>
+      <p>Message: {{ description }}</p>
       <button class="red" type="button">
         <i class="icon ion-md-lock"></i> Submit
       </button>
@@ -158,6 +172,7 @@ input {
   appearance: none;
   -webkit-appearance: none;
 }
+
 input:focus {
   box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
 }

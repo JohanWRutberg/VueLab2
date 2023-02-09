@@ -22,19 +22,18 @@ export default {
 };
 </script>
 <template>
-    <div class="centered">
-      <div id="app">
-        <ul v-if="jokes !== null" style="margin-top: 350px; padding: 0">
-          <li v-for="joke in jokes" style="display: flex; gap: 20px">
-            <div>
-              <h6>{{ joke.setup }}</h6>
-              <p>{{ joke.delivery }}</p>
-            </div>
-          </li>
-        </ul>
+  <div class="centered">
+    <div id="app">
+      <ul v-if="jokes !== null" style="margin-top: 350px; padding: 0">
+        <li v-for="joke in jokes" style="display: flex; gap: 20px">
+          <div>
+            <h6>{{ joke.setup }}</h6>
+            <p>{{ joke.delivery }}</p>
+          </div>
+        </li>
+      </ul>
 
-        <p v-else>Laddar...</p>
-      </div>
+      <p v-else>Laddar...</p>
     </div>
   </div>
 </template>
