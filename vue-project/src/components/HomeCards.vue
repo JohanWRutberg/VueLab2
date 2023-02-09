@@ -10,9 +10,9 @@
       <ul class="cards">
         <li class="cards__item">
           <div class="card">
-            <div class="card__image card__image--fence"></div>
+            <div class="card__image card__image--1"></div>
             <div class="card__content">
-              <div class="card__title">Flex</div>
+              <div class="card__title">First Card</div>
               <p class="card__text">
                 This is the shorthand for flex-grow, flex-shrink and flex-basis
                 combined. The second and third parameters (flex-shrink and
@@ -24,9 +24,35 @@
         </li>
         <li class="cards__item">
           <div class="card">
-            <div class="card__image card__image--river"></div>
+            <div class="card__image card__image--2"></div>
             <div class="card__content">
-              <div class="card__title">Flex Grow</div>
+              <div class="card__title">Second Card</div>
+              <p class="card__text">
+                This defines the ability for a flex item to shrink if necessary.
+                Negative numbers are invalid.
+              </p>
+              <button class="btn btn--block card__btn">Button</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards__item">
+          <div class="card">
+            <div class="card__image card__image--3"></div>
+            <div class="card__content">
+              <div class="card__title">Third Card</div>
+              <p class="card__text">
+                This defines the ability for a flex item to shrink if necessary.
+                Negative numbers are invalid.
+              </p>
+              <button class="btn btn--block card__btn">Button</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards__item">
+          <div class="card">
+            <div class="card__image card__image--4"></div>
+            <div class="card__content">
+              <div class="card__title">Fourth Card</div>
               <p class="card__text">
                 This defines the ability for a flex item to grow if necessary.
                 It accepts a unitless value that serves as a proportion. It
@@ -39,9 +65,9 @@
         </li>
         <li class="cards__item">
           <div class="card">
-            <div class="card__image card__image--record"></div>
+            <div class="card__image card__image--5"></div>
             <div class="card__content">
-              <div class="card__title">Flex Shrink</div>
+              <div class="card__title">Fifth Card</div>
               <p class="card__text">
                 This defines the ability for a flex item to shrink if necessary.
                 Negative numbers are invalid.
@@ -52,9 +78,9 @@
         </li>
         <li class="cards__item">
           <div class="card">
-            <div class="card__image card__image--flowers"></div>
+            <div class="card__image card__image--6"></div>
             <div class="card__content">
-              <div class="card__title">Flex Basis</div>
+              <div class="card__title">Sixth Card</div>
               <p class="card__text">
                 This defines the default size of an element before the remaining
                 space is distributed. It can be a length (e.g. 20%, 5rem, etc.)
@@ -203,17 +229,23 @@ img {
     padding-top: 66.6%;
   }
 }
-.card__image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82);
+.card__image--1 {
+  background-image: url(https://unsplash.it/800/600?image=50);
 }
-.card__image--river {
+.card__image--2 {
   background-image: url(https://unsplash.it/800/600?image=11);
 }
-.card__image--record {
+.card__image--3 {
   background-image: url(https://unsplash.it/800/600?image=39);
 }
-.card__image--fence {
+.card__image--4 {
   background-image: url(https://unsplash.it/800/600?image=59);
+}
+.card__image--5 {
+  background-image: url(https://unsplash.it/800/600?image=69);
+}
+.card__image--6 {
+  background-image: url(https://unsplash.it/800/600?image=79);
 }
 .card__title {
   color: #696969;

@@ -18,6 +18,10 @@
         <label>
           <input type="password" placeholder="Password" />
         </label>
+        <label>
+          <input type="text" placeholder="Email Address" />
+        </label>
+
         <button class="red" type="button">
           <i class="icon ion-md-lock"></i> Log in
         </button>
@@ -32,12 +36,6 @@
           <button class="unit" type="button">
             <i class="icon ion-md-settings"></i>
           </button>
-        </div>
-
-        <div class="input-group">
-          <label>
-            <input type="text" placeholder="Email Address" />
-          </label>
           <button class="unit" type="button">
             <i class="icon ion-md-search"></i>
           </button>
@@ -149,7 +147,7 @@ button.unit {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 0 8px;
+  margin: 8px 8px 8px 8px;
   font-size: 19.2px;
 }
 button.unit .icon {
@@ -158,7 +156,7 @@ button.unit .icon {
 button.red {
   display: block;
   width: 100%;
-  color: #ae1100;
+  color: #363433;
 }
 
 .input-group {

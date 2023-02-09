@@ -5,4 +5,5 @@ import HeroImageAbout from "../components/HeroImageAbout.vue";
 <template>
   <HeroImageAbout />
 </template>
+
 <style></style>

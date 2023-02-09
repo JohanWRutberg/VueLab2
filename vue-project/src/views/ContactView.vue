@@ -1,10 +1,11 @@
 <script setup>
-import HeroImageContact from "../components/HeroImageContact.vue";
+import ContactForm from "../components/ContactForm.vue";
 </script>
 
 <template>
-  <HeroImageContact />
+  <ContactForm />
 </template>
+
 <style>
 body {
   background-color: #ebecf0;
