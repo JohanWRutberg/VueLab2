@@ -1,98 +1,109 @@
 <script></script>
 <template>
-  <div id="wrapper-hero">
-    <!--<img
-      src="../assets/img/laura-adai-hnc2QeA5Xos-unsplash.jpg"
-      class="img-fluid"
-      alt="Bild"
-    />-->
-    <div class="centered">
-      <ul class="cards">
-        <li class="cards__item">
-          <div class="card">
-            <div class="card__image card__image--1"></div>
-            <div class="card__content">
-              <div class="card__title">First Card</div>
-              <p class="card__text">
-                This is the shorthand for flex-grow, flex-shrink and flex-basis
-                combined. The second and third parameters (flex-shrink and
-                flex-basis) are optional. Default is 0 1 auto.
-              </p>
-              <button class="btn btn--block card__btn">Button</button>
-            </div>
+  <div class="centered">
+    <ul class="cards">
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--1"></div>
+          <div class="card__content">
+            <div class="card__title">First Card</div>
+            <p class="card__text">
+              This is the shorthand for flex-grow, flex-shrink and flex-basis
+              combined. The second and third parameters (flex-shrink and
+              flex-basis) are optional. Default is 0 1 auto.
+            </p>
+            <button @click="" class="red" type="button">
+              <i class="icon ion-md-lock"></i> Submit
+            </button>
+            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
-        </li>
-        <li class="cards__item">
-          <div class="card">
-            <div class="card__image card__image--2"></div>
-            <div class="card__content">
-              <div class="card__title">Second Card</div>
-              <p class="card__text">
-                This defines the ability for a flex item to shrink if necessary.
-                Negative numbers are invalid.
-              </p>
-              <button class="btn btn--block card__btn">Button</button>
-            </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--2"></div>
+          <div class="card__content">
+            <div class="card__title">Second Card</div>
+            <p class="card__text">
+              This defines the ability for a flex item to shrink if necessary.
+              Negative numbers are invalid.
+            </p>
+            <button @click="" class="red" type="button">
+              <i class="icon ion-md-lock"></i> Submit
+            </button>
+            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
-        </li>
-        <li class="cards__item">
-          <div class="card">
-            <div class="card__image card__image--3"></div>
-            <div class="card__content">
-              <div class="card__title">Third Card</div>
-              <p class="card__text">
-                This defines the ability for a flex item to shrink if necessary.
-                Negative numbers are invalid.
-              </p>
-              <button class="btn btn--block card__btn">Button</button>
-            </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--3"></div>
+          <div class="card__content">
+            <div class="card__title">Third Card</div>
+            <p class="card__text">
+              This defines the ability for a flex item to shrink if necessary.
+              Negative numbers are invalid.
+            </p>
+            <button @click="" class="red" type="button">
+              <i class="icon ion-md-lock"></i> Submit
+            </button>
+            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
-        </li>
-        <li class="cards__item">
-          <div class="card">
-            <div class="card__image card__image--4"></div>
-            <div class="card__content">
-              <div class="card__title">Fourth Card</div>
-              <p class="card__text">
-                This defines the ability for a flex item to grow if necessary.
-                It accepts a unitless value that serves as a proportion. It
-                dictates what amount of the available space inside the flex
-                container the item should take up.
-              </p>
-              <button class="btn btn--block card__btn">Button</button>
-            </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--4"></div>
+          <div class="card__content">
+            <div class="card__title">Fourth Card</div>
+            <p class="card__text">
+              This defines the ability for a flex item to grow if necessary. It
+              accepts a unitless value that serves as a proportion. It dictates
+              what amount of the available space inside the flex container the
+              item should take up.
+            </p>
+            <button @click="" class="red" type="button">
+              <i class="icon ion-md-lock"></i> Submit
+            </button>
+            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
-        </li>
-        <li class="cards__item">
-          <div class="card">
-            <div class="card__image card__image--5"></div>
-            <div class="card__content">
-              <div class="card__title">Fifth Card</div>
-              <p class="card__text">
-                This defines the ability for a flex item to shrink if necessary.
-                Negative numbers are invalid.
-              </p>
-              <button class="btn btn--block card__btn">Button</button>
-            </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--5"></div>
+          <div class="card__content">
+            <div class="card__title">Fifth Card</div>
+            <p class="card__text">
+              This defines the ability for a flex item to shrink if necessary.
+              Negative numbers are invalid.
+            </p>
+            <button @click="" class="red" type="button">
+              <i class="icon ion-md-lock"></i> Submit
+            </button>
+            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
-        </li>
-        <li class="cards__item">
-          <div class="card">
-            <div class="card__image card__image--6"></div>
-            <div class="card__content">
-              <div class="card__title">Sixth Card</div>
-              <p class="card__text">
-                This defines the default size of an element before the remaining
-                space is distributed. It can be a length (e.g. 20%, 5rem, etc.)
-                or a keyword. The auto keyword means "look at my width or height
-                property."
-              </p>
-              <button class="btn btn--block card__btn">Button</button>
-            </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--6"></div>
+          <div class="card__content">
+            <div class="card__title">Sixth Card</div>
+            <p class="card__text">
+              This defines the default size of an element before the remaining
+              space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or
+              a keyword. The auto keyword means "look at my width or height
+              property."
+            </p>
+            <button @click="" class="red" type="button">
+              <i class="icon ion-md-lock"></i> Submit
+            </button>
+            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </template>
 <style scoped>
@@ -108,13 +119,21 @@
   margin-top: 220px;
   margin-bottom: 50vh;
 }
+.count {
+  font-style: italic;
+}
+
+.bad {
+  color: red;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 html {
-  background-color: #f5f5f5;
+  background-color: ebecf0;
 }
 body {
   color: #999999;
@@ -134,7 +153,7 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-.btn {
+/*.btn {
   background-color: white;
   border: 1px solid #cccccc;
   color: #696969;
@@ -144,7 +163,7 @@ img {
 .btn--block {
   display: block;
   width: 100%;
-}
+}*/
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,7 +192,7 @@ img {
   }
 }
 .card {
-  background-color: white;
+  background-color: #ebecf0;
   border: 1px solid #bfbfbf;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.38);
@@ -210,7 +229,7 @@ img {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   -webkit-filter: contrast(70%);
-  filter: contrast(70%);
+  filter: contrast(65%);
   overflow: hidden;
   position: relative;
   -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
@@ -255,11 +274,127 @@ img {
   text-transform: uppercase;
 }
 .card__text {
+  color: #a5a5a5;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;
+}
+body,
+html {
+  background-color: #ebecf0;
+}
+
+body,
+p,
+input,
+select,
+textarea,
+button {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+
+div,
+p {
+  color: #babecc;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+form {
+  padding: 16px;
+  width: 520px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.segment {
+  padding: 32px 0;
+  text-align: center;
+}
+
+button,
+input {
+  color: #696969;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+input {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+button {
+  color: #61677c;
+  font-weight: normal;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 400;
+}
+button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+button .icon {
+  margin-right: 8px;
+}
+button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 8px 8px 8px;
+  font-size: 19.2px;
+}
+button.unit .icon {
+  margin-right: 0;
+}
+button.red {
+  display: block;
+  width: 100%;
+  color: #363433;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.input-group label {
+  margin: 0;
+  flex: 1;
 }
 </style>

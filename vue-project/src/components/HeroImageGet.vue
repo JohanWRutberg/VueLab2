@@ -45,11 +45,12 @@ export default {
 }
 
 .centered {
+  display: flex;
+  justify-content: center;
   margin-top: 220px;
   margin-bottom: 50vh;
   position: fixed;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
 }
 </style>

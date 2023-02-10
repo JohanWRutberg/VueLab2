@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      message: "",
+      name: "",
       email: "",
       description: "",
       msg: [],
@@ -29,7 +29,7 @@ export default {
       return this.description.length;
     },
     isBad() {
-      return this.currentLength > 50;
+      return this.currentLength > 40;
     },
   },
 };
@@ -43,13 +43,13 @@ export default {
       </div>
 
       <label>
-        <input type="text" v-model="message" placeholder="Name" />
+        <input type="text" v-model="name" placeholder="Name" />
       </label>
       <label for="email">
         <input
           type="text"
           v-model="email"
-          minlength="10"
+          minlength="5"
           required
           placeholder="E-mail"
         />
@@ -60,18 +60,18 @@ export default {
         <input
           type="text"
           v-model="description"
-          maxlength="60"
+          maxlength="50"
           placeholder="Message"
-        />Enter a maximum of 60 characters please:
+        />Enter a maximum of 50 characters please:
         <span class="count" :class="{ bad: isBad }">
           {{ currentLength }} characters
         </span>
       </div>
       <p></p>
-      <p>Name: {{ message }}</p>
+      <p>Name: {{ name }}</p>
       <p>E-mail: {{ email }}</p>
       <p>Message: {{ description }}</p>
-      <button class="red" type="button">
+      <button @click="" class="red" type="button">
         <i class="icon ion-md-lock"></i> Submit
       </button>
 
