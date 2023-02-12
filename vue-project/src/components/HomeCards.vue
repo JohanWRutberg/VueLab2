@@ -255,10 +255,10 @@ img {
   background-image: url(https://unsplash.it/800/600?image=281);
 }
 .card__image--3 {
-  background-image: url(https://unsplash.it/800/600?image=317);
+  background-image: url(https://unsplash.it/800/600?image=372);
 }
 .card__image--4 {
-  background-image: url(https://unsplash.it/800/600?image=372);
+  background-image: url(https://unsplash.it/800/600?image=317);
 }
 .card__image--5 {
   background-image: url(https://unsplash.it/800/600?image=436);
