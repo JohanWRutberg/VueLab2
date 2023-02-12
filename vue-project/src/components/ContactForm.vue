@@ -6,8 +6,10 @@ export default {
       email: "",
       description: "",
       msg: [],
+      isSubmitted: false,
     };
   },
+
   watch: {
     email(value) {
       // binding this to the data value in the email input
@@ -15,6 +17,7 @@ export default {
       this.validateEmail(value);
     },
   },
+
   methods: {
     validateEmail(value) {
       if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
@@ -23,7 +26,12 @@ export default {
         this.msg["email"] = "Enter a valid Email Address";
       }
     },
+
+    getInput() {
+      this.isSubmitted = true;
+    },
   },
+
   computed: {
     currentLength() {
       return this.description.length;
@@ -62,18 +70,25 @@ export default {
           v-model="description"
           maxlength="50"
           placeholder="Message"
-        />Enter a maximum of 50 characters please:
+        />Max 50 char. You have entered:
         <span class="count" :class="{ bad: isBad }">
-          {{ currentLength }} characters
+          {{ currentLength }}
         </span>
+        characters.
       </div>
       <p></p>
       <p>Name: {{ name }}</p>
       <p>E-mail: {{ email }}</p>
       <p>Message: {{ description }}</p>
-      <button @click="" class="red" type="button">
+      <button @click="getInput" class="red" type="button">
         <i class="icon ion-md-lock"></i> Submit
       </button>
+
+      <div v-if="isSubmitted">
+        <p>{{ name }}</p>
+        <p>{{ email }}</p>
+        <p>{{ description }}</p>
+      </div>
 
       <div class="segment">
         <button class="unit" type="button">

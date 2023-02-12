@@ -28,6 +28,7 @@
 
 <script>
 import axios from 'axios';
+
 export default {
   created() {
     this.getJokes();
@@ -55,8 +56,8 @@ export default {
   display: flex;
   justify-content: center;
   margin-top: 20vh;
-
 }
+
 #app {
   position:absolute;
   display: flex;

@@ -1,5 +1,17 @@
-<script></script>
+<script>
+export default {
+  methods: {
+    linkToOtherWindow(url) {
+      window.open(url, "_blank");
+    },
+  },
+};
+</script>
 <template>
+  <div class="container">
+    <div><h1>Lorem Picsum</h1></div>
+  </div>
+
   <div class="centered">
     <ul class="cards">
       <li class="cards__item">
@@ -12,8 +24,14 @@
               combined. The second and third parameters (flex-shrink and
               flex-basis) are optional. Default is 0 1 auto.
             </p>
-            <button @click="" class="red" type="button">
-              <i class="icon ion-md-lock"></i> Submit
+            <button
+              @click="
+                linkToOtherWindow('https://picsum.photos/id/244/1545/1024')
+              "
+              class="red"
+              type="button"
+            >
+              <i class="icon ion-md-lock"></i> Get Image
             </button>
             <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
@@ -28,8 +46,14 @@
               This defines the ability for a flex item to shrink if necessary.
               Negative numbers are invalid.
             </p>
-            <button @click="" class="red" type="button">
-              <i class="icon ion-md-lock"></i> Submit
+            <button
+              @click="
+                linkToOtherWindow('https://picsum.photos/id/281/1545/1024')
+              "
+              class="red"
+              type="button"
+            >
+              <i class="icon ion-md-lock"></i> Get Image
             </button>
             <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
@@ -44,8 +68,14 @@
               This defines the ability for a flex item to shrink if necessary.
               Negative numbers are invalid.
             </p>
-            <button @click="" class="red" type="button">
-              <i class="icon ion-md-lock"></i> Submit
+            <button
+              @click="
+                linkToOtherWindow('https://picsum.photos/id/372/1545/1024')
+              "
+              class="red"
+              type="button"
+            >
+              <i class="icon ion-md-lock"></i> Get Image
             </button>
             <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
@@ -62,8 +92,14 @@
               what amount of the available space inside the flex container the
               item should take up.
             </p>
-            <button @click="" class="red" type="button">
-              <i class="icon ion-md-lock"></i> Submit
+            <button
+              @click="
+                linkToOtherWindow('https://picsum.photos/id/317/1545/1024')
+              "
+              class="red"
+              type="button"
+            >
+              <i class="icon ion-md-lock"></i> Get Image
             </button>
             <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
@@ -78,8 +114,14 @@
               This defines the ability for a flex item to shrink if necessary.
               Negative numbers are invalid.
             </p>
-            <button @click="" class="red" type="button">
-              <i class="icon ion-md-lock"></i> Submit
+            <button
+              @click="
+                linkToOtherWindow('https://picsum.photos/id/436/1545/1024')
+              "
+              class="red"
+              type="button"
+            >
+              <i class="icon ion-md-lock"></i> Get Image
             </button>
             <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
@@ -96,8 +138,14 @@
               a keyword. The auto keyword means "look at my width or height
               property."
             </p>
-            <button @click="" class="red" type="button">
-              <i class="icon ion-md-lock"></i> Submit
+            <button
+              @click="
+                linkToOtherWindow('https://picsum.photos/id/451/1545/1024')
+              "
+              class="red"
+              type="button"
+            >
+              <i class="icon ion-md-lock"></i> Get Image
             </button>
             <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
@@ -107,6 +155,17 @@
   </div>
 </template>
 <style scoped>
+.container {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  margin-top: 25vh;
+}
+.container,
+h1 {
+  font-size: 80px;
+}
+
 #wrapper-hero img {
   margin: 0 auto;
   height: auto;
@@ -116,8 +175,8 @@
 .centered {
   display: flex;
   justify-content: center;
-  margin-top: 220px;
-  margin-bottom: 50vh;
+  margin-top: 30px;
+  margin-bottom: 30vh;
 }
 .count {
   font-style: italic;
