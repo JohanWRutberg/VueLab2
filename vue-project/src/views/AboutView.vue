@@ -3,7 +3,7 @@ import SomeHeadline from "../components/SomeHeadline.vue";
 </script>
 
 <template>
-  <SomeHeadline />
+  <SomeHeadline :someProp="'Jag är en typsäker prop'" />
 </template>
 
 <style>

@@ -1,8 +1,16 @@
-<script></script>
+<script setup>
+defineProps({
+  someProp: {
+    type: String,
+    required: true,
+  },
+});
+</script>
 
 <template>
   <div class="container">
     <h1>Rubrik</h1>
+    <p>{{ someProp }}</p>
   </div>
   <div id="app"></div>
 </template>
@@ -11,7 +19,9 @@
 .container {
   position: sticky;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 20vh;
 }
 

@@ -83,7 +83,7 @@ export default {
       <button @click="getInput" class="red" type="button">
         <i class="icon ion-md-lock"></i> Submit
       </button>
-
+      <p></p>
       <div v-if="isSubmitted">
         <p>{{ name }}</p>
         <p>{{ email }}</p>
@@ -127,6 +127,7 @@ export default {
   transform: translate(-50%, -50%);
   color: black;
 }
+
 body,
 html {
   background-color: #ebecf0;
@@ -155,7 +156,6 @@ form {
   margin: 0 auto;
   margin-top: 200px;
 }
-
 .segment {
   padding: 32px 0;
   text-align: center;
@@ -200,9 +200,11 @@ button {
   cursor: pointer;
   font-weight: 600;
 }
+
 button:hover {
   box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
+
 button:active {
   box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
 }
