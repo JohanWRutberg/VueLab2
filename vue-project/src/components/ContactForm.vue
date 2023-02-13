@@ -37,14 +37,14 @@ export default {
       return this.description.length;
     },
     isBad() {
-      return this.currentLength > 40;
+      return this.currentLength > 30;
     },
   },
 };
 </script>
 
 <template>
-  <div class="centered">
+  <div class="container">
     <form>
       <div class="segment">
         <h1>Send us a message!</h1>
@@ -68,23 +68,26 @@ export default {
         <input
           type="text"
           v-model="description"
-          maxlength="50"
+          maxlength="40"
           placeholder="Message"
-        />Max 50 char. You have entered:
-        <span class="count" :class="{ bad: isBad }">
-          {{ currentLength }}
-        </span>
-        characters.
+        />
+        <div style="margin-left: 20px">
+          Max 40 char. You have entered:
+          <span class="count" :class="{ bad: isBad }">
+            {{ currentLength }}
+          </span>
+          characters.
+
+          <p>Name: {{ name }}</p>
+          <p>E-mail: {{ email }}</p>
+          <p>Message: {{ description }}</p>
+        </div>
       </div>
-      <p></p>
-      <p>Name: {{ name }}</p>
-      <p>E-mail: {{ email }}</p>
-      <p>Message: {{ description }}</p>
       <button @click="getInput" class="red" type="button">
-        <i class="icon ion-md-lock"></i> Submit
+        <i class="icon"></i> Submit
       </button>
       <p></p>
-      <div v-if="isSubmitted">
+      <div v-if="isSubmitted" style="margin-left: 20px">Submitted values:
         <p>{{ name }}</p>
         <p>{{ email }}</p>
         <p>{{ description }}</p>
@@ -92,16 +95,16 @@ export default {
 
       <div class="segment">
         <button class="unit" type="button">
-          <i class="icon ion-md-arrow-back"></i>
+          <i class="icon"></i>
         </button>
         <button class="unit" type="button">
-          <i class="icon ion-md-bookmark"></i>
+          <i class="icon"></i>
         </button>
         <button class="unit" type="button">
           <i class="icon ion-md-settings"></i>
         </button>
         <button class="unit" type="button">
-          <i class="icon ion-md-search"></i>
+          <i class="icon"></i>
         </button>
       </div>
     </form>
@@ -118,14 +121,16 @@ export default {
 
 .bad {
   color: red;
+  font-weight: bold;
 }
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
+.container {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-left: 10px;
 }
 
 body,
@@ -143,7 +148,9 @@ button {
   letter-spacing: -0.2px;
   font-size: 16px;
 }
-
+h1 {
+  font-size: 40px;
+}
 div,
 p {
   color: #babecc;
@@ -152,9 +159,8 @@ p {
 
 form {
   padding: 16px;
-  width: 520px;
+  width: 450px;
   margin: 0 auto;
-  margin-top: 200px;
 }
 .segment {
   padding: 32px 0;

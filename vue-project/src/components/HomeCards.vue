@@ -9,7 +9,7 @@ export default {
 </script>
 <template>
   <div class="container">
-    <div><h1>Lorem Picsum</h1></div>
+    <div><h1>Picsum Quotes</h1></div>
   </div>
 
   <div class="centered">
@@ -18,11 +18,10 @@ export default {
         <div class="card">
           <div class="card__image card__image--1"></div>
           <div class="card__content">
-            <div class="card__title">First Card</div>
+            <div class="card__title">First Quote(s)</div>
             <p class="card__text">
-              This is the shorthand for flex-grow, flex-shrink and flex-basis
-              combined. The second and third parameters (flex-shrink and
-              flex-basis) are optional. Default is 0 1 auto.
+              “Java is to JavaScript what car is to Carpet.” – “First, solve the
+              problem. Then, write the code.”
             </p>
             <button
               @click="
@@ -33,7 +32,6 @@ export default {
             >
               <i class="icon ion-md-lock"></i> Get Image
             </button>
-            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
         </div>
       </li>
@@ -41,10 +39,10 @@ export default {
         <div class="card">
           <div class="card__image card__image--2"></div>
           <div class="card__content">
-            <div class="card__title">Second Card</div>
+            <div class="card__title">Second Quote(s)</div>
             <p class="card__text">
-              This defines the ability for a flex item to shrink if necessary.
-              Negative numbers are invalid.
+              “Experience is the name everyone gives to their mistakes.” – “ In
+              order to be irreplaceable, one must always be different.”
             </p>
             <button
               @click="
@@ -55,7 +53,6 @@ export default {
             >
               <i class="icon ion-md-lock"></i> Get Image
             </button>
-            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
         </div>
       </li>
@@ -63,10 +60,10 @@ export default {
         <div class="card">
           <div class="card__image card__image--3"></div>
           <div class="card__content">
-            <div class="card__title">Third Card</div>
+            <div class="card__title">Third Quote(s)</div>
             <p class="card__text">
-              This defines the ability for a flex item to shrink if necessary.
-              Negative numbers are invalid.
+              “Sometimes it pays to stay in bed on Monday, rather than spending
+              the rest of the week debugging Monday’s code.”
             </p>
             <button
               @click="
@@ -77,7 +74,6 @@ export default {
             >
               <i class="icon ion-md-lock"></i> Get Image
             </button>
-            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
         </div>
       </li>
@@ -85,12 +81,10 @@ export default {
         <div class="card">
           <div class="card__image card__image--4"></div>
           <div class="card__content">
-            <div class="card__title">Fourth Card</div>
+            <div class="card__title">Fourth Quote(s)</div>
             <p class="card__text">
-              This defines the ability for a flex item to grow if necessary. It
-              accepts a unitless value that serves as a proportion. It dictates
-              what amount of the available space inside the flex container the
-              item should take up.
+              “Code is like humor. When you have to explain it, it’s bad.” –
+              “Before software can be reusable it first has to be usable.”
             </p>
             <button
               @click="
@@ -101,7 +95,6 @@ export default {
             >
               <i class="icon ion-md-lock"></i> Get Image
             </button>
-            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
         </div>
       </li>
@@ -109,10 +102,10 @@ export default {
         <div class="card">
           <div class="card__image card__image--5"></div>
           <div class="card__content">
-            <div class="card__title">Fifth Card</div>
+            <div class="card__title">Fifth Quote(s)</div>
             <p class="card__text">
-              This defines the ability for a flex item to shrink if necessary.
-              Negative numbers are invalid.
+              “When to use iterative development? You should use iterative
+              development only on projects that you want to succeed.”
             </p>
             <button
               @click="
@@ -123,7 +116,6 @@ export default {
             >
               <i class="icon ion-md-lock"></i> Get Image
             </button>
-            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
         </div>
       </li>
@@ -131,12 +123,10 @@ export default {
         <div class="card">
           <div class="card__image card__image--6"></div>
           <div class="card__content">
-            <div class="card__title">Sixth Card</div>
+            <div class="card__title">Sixth Quote(s)</div>
             <p class="card__text">
-              This defines the default size of an element before the remaining
-              space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or
-              a keyword. The auto keyword means "look at my width or height
-              property."
+              “Make it work, make it right, make it fast.” – “Fix the cause, not
+              the symptom.”
             </p>
             <button
               @click="
@@ -147,7 +137,6 @@ export default {
             >
               <i class="icon ion-md-lock"></i> Get Image
             </button>
-            <!--<button class="btn btn--block card__btn">Button</button>-->
           </div>
         </div>
       </li>
@@ -159,11 +148,11 @@ export default {
   position: sticky;
   display: flex;
   justify-content: center;
-  margin-top: 25vh;
+  margin-top: 15vh;
 }
 .container,
 h1 {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 #wrapper-hero img {
@@ -212,17 +201,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-/*.btn {
-  background-color: white;
-  border: 1px solid #cccccc;
-  color: #696969;
-  padding: 0.5rem;
-  text-transform: lowercase;
-}
-.btn--block {
-  display: block;
-  width: 100%;
-}*/
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;

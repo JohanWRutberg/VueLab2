@@ -23,6 +23,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
+}
+div,
+p {
+  color: #babecc;
+  text-shadow: 1px 1px 1px #fff;
 }
 </style>

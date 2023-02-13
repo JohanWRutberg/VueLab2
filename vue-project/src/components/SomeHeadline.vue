@@ -22,15 +22,28 @@ defineProps({
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 #app {
   position: absolute;
   display: flex;
   justify-content: center;
-  margin-top: 40vh;
+  margin-top: 10vh;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+h1 {
+  color: #babecc;
+  text-shadow: 1px 1px 1px #fff;
+  font-size: 60px;
+}
+div {
+  color: #363636;
+  text-shadow: 1px 1px 1px #fff;
+}
+p {
+  color: #363636;
+  text-shadow: 1px 1px 1px #fff;
 }
 </style>
