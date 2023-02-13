@@ -1,4 +1,28 @@
-<script></script>
+<script>
+import axios from 'axios';
+
+export default {
+  created() {
+    this.getJokes();
+  },
+
+  data() {
+    return {
+      jokes: null
+    };
+  },
+
+  methods: {
+    async getJokes() {
+      const response = await axios.get(
+        "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=racist&type=twopart&amount=10"
+      );
+      this.jokes = response.data.jokes;
+    },
+  },
+};
+</script>
+
 <template>
 <div class="container">
     <h1>Text</h1>
@@ -27,28 +51,7 @@
 </template>
 
 <script>
-import axios from 'axios';
 
-export default {
-  created() {
-    this.getJokes();
-  },
-
-  data() {
-    return {
-      jokes: null
-    };
-  },
-
-  methods: {
-    async getJokes() {
-      const response = await axios.get(
-        "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=racist&type=twopart&amount=10"
-      );
-      this.jokes = response.data.jokes;
-    },
-  },
-};
 </script>
 <style scoped>
 .container {

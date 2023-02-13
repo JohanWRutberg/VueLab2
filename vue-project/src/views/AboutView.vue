@@ -1,9 +1,13 @@
 <script setup>
-import HeroImageAbout from "../components/HeroImageAbout.vue";
+import SomeHeadline from "../components/SomeHeadline.vue";
 </script>
 
 <template>
-  <HeroImageAbout />
+  <SomeHeadline />
 </template>
 
-<style></style>
+<style>
+body {
+  background-color: #ebecf0;
+}
+</style>
