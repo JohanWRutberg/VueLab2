@@ -7,9 +7,19 @@ defineProps({
 });
 </script>
 
+<script>
+export default {
+  data() {
+    return {
+      headline: "{{Jag är en rubrik}}",
+    };
+  },
+};
+</script>
+
 <template>
   <div class="container">
-    <h1>Rubrik</h1>
+    <h1>{{ headline }}</h1>
     <p>{{ someProp }}</p>
   </div>
   <div id="app"></div>

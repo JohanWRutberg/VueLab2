@@ -12,11 +12,19 @@ onMounted(async () => {
 
 const jokes = computed(() => store.getters.jokes);
 </script>
-
+<script>
+export default {
+  data() {
+    return {
+      headline: "Random Computer Jokes",
+    };
+  },
+};
+</script>
 <template>
   <div class="container">
     <ul v-if="jokes !== null" style="padding: 0; margin-left: 20px">
-      <h1>Random Computer Jokes</h1>
+      <h1>{{ headline }}</h1>
       <button @click="emit('fetchJokes')">Refresh</button>
       <p></p>
       <p></p>

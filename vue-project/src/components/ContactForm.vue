@@ -7,6 +7,7 @@ export default {
       description: "",
       msg: [],
       isSubmitted: false,
+      headline: "Send us a message!",
     };
   },
 
@@ -47,7 +48,7 @@ export default {
   <div class="container">
     <form>
       <div class="segment">
-        <h1>Send us a message!</h1>
+        <h1>{{ headline }}</h1>
       </div>
 
       <label>
@@ -87,7 +88,8 @@ export default {
         <i class="icon"></i> Submit
       </button>
       <p></p>
-      <div v-if="isSubmitted" style="margin-left: 20px">Submitted values:
+      <div v-if="isSubmitted" style="margin-left: 20px">
+        Submitted values:
         <p>{{ name }}</p>
         <p>{{ email }}</p>
         <p>{{ description }}</p>
@@ -95,16 +97,16 @@ export default {
 
       <div class="segment">
         <button class="unit" type="button">
-          <i class="icon"></i>
+          <i class="icon">1</i>
         </button>
         <button class="unit" type="button">
-          <i class="icon"></i>
+          <i class="icon">2</i>
         </button>
         <button class="unit" type="button">
-          <i class="icon ion-md-settings"></i>
+          <i class="icon">3</i>
         </button>
         <button class="unit" type="button">
-          <i class="icon"></i>
+          <i class="icon">4</i>
         </button>
       </div>
     </form>
@@ -114,11 +116,9 @@ export default {
 [v-cloak] {
   display: none;
 }
-
 .count {
   font-style: italic;
 }
-
 .bad {
   color: red;
   font-weight: bold;
@@ -146,11 +146,13 @@ textarea,
 button {
   font-family: "Montserrat", sans-serif;
   letter-spacing: -0.2px;
-  font-size: 16px;
+  font-size: 1zpx;
 }
+
 h1 {
   font-size: 40px;
 }
+
 div,
 p {
   color: #babecc;
@@ -204,7 +206,7 @@ button {
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 button:hover {

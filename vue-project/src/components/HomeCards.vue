@@ -1,5 +1,11 @@
 <script>
 export default {
+  data() {
+    return {
+      headline: "Picsum Quotes",
+    };
+  },
+
   methods: {
     linkToOtherWindow(url) {
       window.open(url, "_blank");
@@ -9,7 +15,9 @@ export default {
 </script>
 <template>
   <div class="container">
-    <div><h1>Picsum Quotes</h1></div>
+    <div>
+      <h1>{{ headline }}</h1>
+    </div>
   </div>
 
   <div class="centered">
@@ -183,19 +191,7 @@ h1 {
 html {
   background-color: ebecf0;
 }
-body {
-  color: #999999;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0;
-  margin: 0;
-  padding: 1rem;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /*-moz-font-feature-settings: "liga" on;*/
-}
+
 img {
   height: auto;
   max-width: 100%;

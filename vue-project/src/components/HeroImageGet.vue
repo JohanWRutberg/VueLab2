@@ -1,4 +1,5 @@
 <script>
+import axios from "axios";
 export default {
   created() {
     this.getJokes();
@@ -12,11 +13,10 @@ export default {
 
   methods: {
     async getJokes() {
-      const response = await axios(
+      const response = await axios.get(
         "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=racist&type=twopart&amount=10"
       );
-      const result = await response.json();
-      this.jokes = result.jokes;
+      this.jokes = response.data.jokes;
     },
   },
 };
