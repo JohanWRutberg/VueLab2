@@ -352,7 +352,7 @@ form {
 button,
 input {
   color: #696969;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;

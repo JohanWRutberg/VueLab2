@@ -4,10 +4,11 @@ export default {
     return {
       name: "",
       email: "",
-      description: "",
+      message: "",
       msg: [],
       isSubmitted: false,
       headline: "Send us a message!",
+      word: "",
     };
   },
 
@@ -28,6 +29,15 @@ export default {
       }
     },
 
+    greet(event) {
+      // `this` inside methods points to the current active instance
+      alert(`Hello ${this.name}!`);
+      // `event` is the native DOM event
+      if (event) {
+        alert(event.target.tagName);
+      }
+    },
+
     getInput() {
       this.isSubmitted = true;
     },
@@ -35,7 +45,7 @@ export default {
 
   computed: {
     currentLength() {
-      return this.description.length;
+      return this.message.length;
     },
     isBad() {
       return this.currentLength > 30;
@@ -68,20 +78,20 @@ export default {
       <div id="app" v-cloak>
         <input
           type="text"
-          v-model="description"
+          v-model="message"
           maxlength="40"
           placeholder="Message"
         />
         <div style="margin-left: 20px">
-          Max 40 char. You have entered:
+          Max 40 char. (You have entered:
           <span class="count" :class="{ bad: isBad }">
             {{ currentLength }}
           </span>
-          characters.
+          characters).
 
           <p>Name: {{ name }}</p>
           <p>E-mail: {{ email }}</p>
-          <p>Message: {{ description }}</p>
+          <p>Message: {{ message }}</p>
         </div>
       </div>
       <button @click="getInput" class="red" type="button">
@@ -92,20 +102,20 @@ export default {
         Submitted values:
         <p>{{ name }}</p>
         <p>{{ email }}</p>
-        <p>{{ description }}</p>
+        <p>{{ message }}</p>
       </div>
 
       <div class="segment">
-        <button class="unit" type="button">
+        <button @click="greet" class="unit" type="button">
           <i class="icon">1</i>
         </button>
-        <button class="unit" type="button">
+        <button @click="greet" class="unit" type="button">
           <i class="icon">2</i>
         </button>
-        <button class="unit" type="button">
+        <button @click="greet" class="unit" type="button">
           <i class="icon">3</i>
         </button>
-        <button class="unit" type="button">
+        <button @click="greet" class="unit" type="button">
           <i class="icon">4</i>
         </button>
       </div>
@@ -146,16 +156,12 @@ textarea,
 button {
   font-family: "Montserrat", sans-serif;
   letter-spacing: -0.2px;
-  font-size: 1zpx;
-}
-
-h1 {
-  font-size: 40px;
+  font-size: 14px;
 }
 
 div,
 p {
-  color: #babecc;
+  color: #b4b5b9;
   text-shadow: 1px 1px 1px #fff;
 }
 
@@ -163,17 +169,36 @@ form {
   padding: 16px;
   width: 450px;
   margin: 0 auto;
+  margin-top: 0px;
 }
+
 .segment {
   padding: 32px 0;
   text-align: center;
 }
 
-button,
-input {
+button {
+  color: #696969;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   border: 0;
   outline: 0;
-  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+input {
+  color: #696969;
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
   border-radius: 320px;
   padding: 16px;
   background-color: #ebecf0;
@@ -202,17 +227,15 @@ input:focus {
 
 button {
   color: #61677c;
-  font-weight: bold;
+  font-weight: normal;
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  font-weight: 900;
+  font-weight: 400;
 }
-
 button:hover {
   box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
-
 button:active {
   box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
 }

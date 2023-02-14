@@ -33,6 +33,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin-top: 10vh;
+  margin-left: 10px;
 }
 
 #app {
@@ -46,7 +47,7 @@ export default {
 h1 {
   color: #babecc;
   text-shadow: 1px 1px 1px #fff;
-  font-size: 60px;
+  font-size: 40px;
 }
 div {
   color: #363636;
