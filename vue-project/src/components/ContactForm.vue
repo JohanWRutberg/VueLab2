@@ -19,7 +19,7 @@ export default {
       this.validateEmail(value);
     },
   },
-
+  //Validating correct input, else - err msg
   methods: {
     validateEmail(value) {
       if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
@@ -30,11 +30,9 @@ export default {
     },
 
     greet(event) {
-      // `this` inside methods points to the current active instance
       alert(`Hello ${this.name}!`);
-      // `event` is the native DOM event
       if (event) {
-        alert(event.target.tagName);
+        alert(event.target.name);
       }
     },
 
