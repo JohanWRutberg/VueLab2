@@ -4,6 +4,7 @@ import SomeHeadline from "../components/SomeHeadline.vue";
 
 <template>
   <SomeHeadline :someProp="'Jag är en typsäker prop'" />
+  <BlackJack />
 </template>
 
 <style>

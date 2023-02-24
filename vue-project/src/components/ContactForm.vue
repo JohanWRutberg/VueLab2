@@ -22,7 +22,7 @@ export default {
   //Validating correct input, else - err msg
   methods: {
     validateEmail(value) {
-      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
+      if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
         this.msg["email"] = "";
       } else {
         this.msg["email"] = "Enter a valid Email Address";

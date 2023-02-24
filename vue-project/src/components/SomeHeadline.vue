@@ -11,18 +11,21 @@ defineProps({
 export default {
   data() {
     return {
-      headline: "{{Jag är en rubrik}}",
+      headline: "- Jag är en rubrik -",
+      headlineBJ: "Black Jack",
     };
   },
 };
 </script>
 
 <template>
-  <div class="container">
+  <div class="container" id="app">
     <h1>{{ headline }}</h1>
     <p>{{ someProp }}</p>
+    <div>
+      <h1>{{ headlineBJ }}</h1>
+    </div>
   </div>
-  <div id="app"></div>
 </template>
 
 <style scoped>
