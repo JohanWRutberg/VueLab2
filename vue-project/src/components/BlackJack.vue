@@ -1,13 +1,4 @@
-<script>
-import json from "./rules.json";
-export default {
-  data() {
-    return {
-      messages: json,
-    };
-  },
-};
-</script>
+<script></script>
 <template>
   <div></div>
 </template>
