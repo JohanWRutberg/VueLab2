@@ -1,7 +1,10 @@
 <script>
+import json from "./rules.json";
 export default {
   data() {
-    return {};
+    return {
+      messages: json,
+    };
   },
 };
 </script>
