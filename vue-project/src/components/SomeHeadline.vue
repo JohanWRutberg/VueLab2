@@ -17,7 +17,23 @@ export default {
   },
 };
 </script>
+<template>
+  <p v-for="user in users" :key="user.id">
+    {{ user.name }}
+  </p>
+</template>
 
+<script>
+import userData from "../../rules.json";
+
+export default {
+  data() {
+    return {
+      users: userData,
+    };
+  },
+};
+</script>
 <template>
   <div class="container" id="app">
     <h1>{{ headline }}</h1>
