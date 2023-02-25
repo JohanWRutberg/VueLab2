@@ -8,45 +8,35 @@ defineProps({
 </script>
 
 <script>
+import gameData from "../../rules.json";
 export default {
   data() {
     return {
       headline: "- Jag är en rubrik -",
-      headlineBJ: "Black Jack",
+      headlineBJ: "Black Jack - Regler",
+      games: gameData,
     };
   },
 };
 </script>
 <template>
-  <p v-for="user in users" :key="user.id">
-    {{ user.name }}
-  </p>
-</template>
-
-<script>
-import userData from "../../rules.json";
-
-export default {
-  data() {
-    return {
-      users: userData,
-    };
-  },
-};
-</script>
-<template>
-  <div class="container" id="app">
+  <div class="container">
     <h1>{{ headline }}</h1>
     <p>{{ someProp }}</p>
     <div>
       <h1>{{ headlineBJ }}</h1>
+    </div>
+    <div style="white-space: pre-line">
+      <p v-for="game in games" :key="game.blackjack">
+        {{ game.blackjack }}
+      </p>
     </div>
   </div>
 </template>
 
 <style scoped>
 .container {
-  position: sticky;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,10 +46,10 @@ export default {
 }
 
 #app {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
-  margin-top: 10vh;
+  margin-top: 10px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
