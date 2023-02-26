@@ -8,7 +8,7 @@ import SomeHeadline from "../components/SomeHeadline.vue";
 
 <style>
 body {
-  background: url(../assets/img/AdobeStock_460985268.jpeg) no-repeat center
+  background: url(../assets/img/AdobeStock_469516417.jpeg) no-repeat center
     center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

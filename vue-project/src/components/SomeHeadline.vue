@@ -22,7 +22,7 @@ export default {
 <template>
   <div class="headline">
     <h1>{{ headline }}</h1>
-    <p>{{ someProp }}</p>
+    <!--<p>{{ someProp }}</p>-->
   </div>
   <div class="card">
     <div style="white-space: pre-line" class="card__content">
@@ -52,6 +52,7 @@ div p {
 }
 .headline,
 h1 {
+  color: #000000;
   margin: auto;
   width: 50%;
 }
