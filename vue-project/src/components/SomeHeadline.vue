@@ -52,9 +52,10 @@ div p {
 }
 .headline,
 h1 {
-  color: #000000;
+  color: #ffffff;
   margin: auto;
   width: 50%;
+  margin-top: 15vh;
 }
 .card {
   background-color: #000000;
@@ -64,6 +65,7 @@ h1 {
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.38);
   display: flex;
   overflow: hidden;
+  margin-top: 10vh;
   margin-bottom: 10vh;
 }
 .card__content {
